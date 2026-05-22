@@ -1,0 +1,444 @@
+/* Qcm style */
+.page-qcm {
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edf0f7;
+}
+
+.page-qcm .search-block{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px 30px 50px; 
+  padding: 30px 20px 10px 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: linear-gradient(135deg, #6e8ce0 0%, #74c0e3 20%, #2b5bdfd2 80%, #2b65e2 100%);
+  align-items: center;
+  justify-content: center;
+  position:relative;
+}
+
+.page-qcm .search-block .text{
+  text-align: center;
+}
+
+.page-qcm .search-block .text h1 {
+  margin: 10px 20px 20px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.page-qcm .search-block .text p{
+  font-size: 20px;
+  color: #f2f4f5;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.page-qcm .search-row{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.page-qcm #search-input{
+  width: 500px;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 60px 0 0 60px;
+  outline: none;
+  display: block;
+  margin-left: 190px;
+  font-size: 15px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.page-qcm #search-button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 0 60px 60px 0;
+  cursor: pointer;
+  color: #2e2c2c;
+  background: #fff;
+  margin-left: 0px;
+  display: block;
+}
+
+.page-qcm #search-button:hover{
+  color: #2b5bdfd2;
+}
+
+/* Filtrer */
+.page-qcm #filter-button {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #2e2c2c;
+  background: #fff;
+  display: block;
+  margin: 0 30px 0 90px;
+  height: 40px;
+}
+
+.page-qcm #filter-button:hover{
+  color: #2b5bdfd2;
+}
+
+.page-qcm #filter-button.is-on{
+  font-weight: 750;
+  background-color: #2b65e2;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.page-qcm .filter-panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  background: #fff;
+  right: 0;
+  width: 400px;
+}
+
+.page-qcm .filter-panel.is-open {
+  display: block;
+}
+
+.page-qcm .filter-header {
+  display: flex;
+  align-items: center;
+}
+
+.page-qcm .filter-header h2 {
+  font-size: 15px;
+  margin: 10px 0 15px 0;
+}
+
+.page-qcm #close-filter-button {
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: #2b65e2;
+  font-weight: bolder;
+}
+
+.page-qcm .filter-block {
+  margin-bottom: 10px;
+  padding-top: 6px;
+  border-top: 1px solid #eee;
+}
+
+.page-qcm .filter-block h3 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+}
+
+.page-qcm .filter-block label {
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+.page-qcm .filter-footer {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  margin: 10px;
+}
+
+.page-qcm #cancel-filter{
+  border: 1px solid #2b5bdfd2;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #2b5bdfd2;
+  background: #fff;
+  padding: 10px;
+}
+
+.page-qcm #resulta{
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #fff;
+  background: #2b5bdfd2;
+  margin-left: 160px;
+  padding: 10px;
+}
+
+
+/* Liste QCM */
+.qcm-list{
+  margin: 15px;
+}
+
+/* Card */
+.qcm-card{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 0 50px 30px 50px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Main */
+.qcm-card .main{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+/* Nom QCM */
+.qcm-card .main h3{
+  margin: 0;
+  font-size: 20px;
+  color:#1b2b41;
+}
+
+/* Niveau / Matière */
+.qcm-card .middle{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 20px;
+}
+
+.qcm-card .middle p{
+  margin: 0;
+  font-size: 15px;
+  color:#4a5b74;
+}
+
+/* Button */
+.qcm-card .action{
+  margin-top: auto;     
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.qcm-card .action button{
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-right: 50px;
+  font-weight: 35px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  background: #2b5bdfd2;
+}
+
+.qcm-card .action button:hover{
+  color: #78daf5;
+}
+
+.qcm-card .vide{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
+  background: radial-gradient(circle at top left,#191565, #3430a3);
+  border-radius: 10px;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.qcm-card .vide p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em; 
+}
+
+
+
+
+
+/* Blue background */
+.qcm-wrapper {
+  min-height: 100vh;
+  background: #00204a;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px 40px;
+  box-sizing: border-box;
+}
+
+/* Box */
+.qcm-box {
+  width: 100%;
+  max-width: 950px;
+  background: #edf0f7;;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.qcm-box h1 {
+  margin: 0 0 5px 0;
+  font-size: 28px;
+  color: #1b2b41;
+}
+
+.qcm-subtitle {
+  margin: 0 0 20px 0;
+  color: #4a5568;
+}
+
+/* Question title */
+.qcm-question-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.qcm-enonce {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+/* Answers */
+.qcm-answer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.qcm-answer:hover {
+  background: #eef5ff;
+  border-color: #3f80b3;
+}
+
+.qcm-answer input[type="radio"] {
+  accent-color: #3f80b3;
+}
+
+/* Button next */
+.qcm-submit, button.qcm-submit {
+  font-family: inherit;
+  margin-top: 20px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2b65e2 0%, #2b5bdfd2 30%, #74c0e3 90%, #6e8ce0 100%);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.qcm-submit:hover {
+  background: linear-gradient(135deg, #2b65e2d7 0%, #2b5bdfac 30%, #74c0e3e1 90%, #6e8ce0c5 100%);
+}
+
+
+/* Result page */
+
+.qcm-result-box h1 {
+  margin: 0 0 5px 0;
+  font-size: 26px;
+}
+
+.qcm-result-summary {
+  display: flex;
+  gap: 30px;
+  margin: 4px 0 15px 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.qcm-global-msg {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+}
+
+.qcm-global-ok {
+  color: #15803d;
+}
+
+.qcm-global-mid {
+  color: #92400e;
+}
+
+.qcm-global-ko {
+  color: #b91c1c;
+}
+
+/* Result style */
+
+.qcm-result-list {
+  margin-top: 10px;
+}
+
+.qcm-result-question {
+  padding: 16px 18px;
+  margin-bottom: 15px;
+  background: #f9fafb;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.qcm-result-question-title {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.qcm-result-msg {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.qcm-result-msg.qcm-ok {
+  color: #15803d;
+}
+
+.qcm-result-msg.qcm-ko {
+  color: #b91c1c;
+}
+
+/* Button "Retour aux QCM" */
+
+.qcm-result-back {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.qcm-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.qcm-result-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.qcm-result-buttons .qcm-submit {
+  margin-top: 0;
+}

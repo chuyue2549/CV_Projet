@@ -1,0 +1,24 @@
+{
+    "name": "timeo/s3_b1_we-sharp",
+    "autoload": {
+        "psr-4": {
+            "App\\": [
+                "app/",
+                "app/src/",
+                "app/Controllers/"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "timeojavaux",
+            "email": "timeo.javaux@iut-dijon.u-bourgogne.fr"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^12.4"
+    },
+    "require": {
+        "phpmailer/phpmailer": "^7.0"
+    }
+}

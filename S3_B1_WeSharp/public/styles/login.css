@@ -1,0 +1,134 @@
+body {
+  background-color: #ededed;
+}
+
+.page-login{
+  margin: 0 auto 60px;
+  padding-top: 30px;
+}
+.connection-block{ 
+  position: relative;
+  max-width: 720px;
+  padding: 10px;
+  margin: 100px auto 100px; 
+  background: linear-gradient(135deg,#6acef5, #16bdfe, #3b93f7, #1230f1); 
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  box-sizing: border-box; 
+
+}
+
+.connection-wrapper {
+  max-width: 700px;
+  margin: auto;
+  background: #fffffff3;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  padding: 40px 60px 50px;
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.title img {
+  display: block;
+  width: 50px;
+  height: auto;
+  margin-top: -20px;
+}
+
+.subtitle-connexion {
+  margin: 0;
+  padding: 0;
+  color: #0b2252;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+.subtitle-connexion::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1e3cfa, #4e9ff9, #7ed0ff);
+  margin: 6px auto 20px;
+}
+
+.connection-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.connection-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.connection-form label {
+  font-weight: 500;
+  color: #1f2a3c;
+}
+
+.connection-form input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d7e2;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.connection-form input:focus {
+  border-color: #1a51ff;
+  box-shadow: 0 0 0 2px rgba(26, 81, 255, 0.15);
+}
+
+.btn-connection-submit {
+  margin-top: 8px;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #1a51ff;
+  color: #ffffff;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn-connection-submit:hover {
+  background: linear-gradient(90deg, #1a51ff, #32c4ff);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(26, 81, 255, 0.35);
+}
+
+.forgot-link {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #1e72b8;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-link i {
+  font-size: 16px;
+  color: #1e72b8;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}

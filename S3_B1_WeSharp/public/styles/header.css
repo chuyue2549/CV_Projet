@@ -1,0 +1,150 @@
+/* Header style */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 1.5%;
+  padding: 15px 1%;
+  padding: 15px 1%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 1.5%;
+  padding: 15px 1%;
+  padding: 15px 1%;
+  width: 100%;
+  background: linear-gradient(130deg, #231a6f, #1d1b69, #161c61, #111d5c, #0a1e54);
+  background: linear-gradient(130deg, #231a6f, #1d1b69, #161c61, #111d5c, #0a1e54);
+  position: fixed;
+  z-index: 10;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+  margin-left: 3px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.brand img {
+  width: 35px;
+  height: auto;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.brand img {
+  width: 35px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  transform: translateX(-7%);
+  margin-right: 20px;
+  margin-right: 20px;
+}
+
+.nav-links a:hover {
+  color: #00bbf0;
+}
+
+.accueil-lien-bleu, .cours-lien-bleu, .exercices-lien-bleu, .qcm-lien-bleu, .admin-lien-bleu {
+  color: #78daf5;
+  font-size: 16px;
+  margin-top: 10%;
+}
+
+.accueil-lien {
+  color: white;
+  font-size: 16px;
+  margin-top: 10%;
+}
+
+.menu-bouton {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logout-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.separator {
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(231, 230, 230, 0.947);
+}
+
+.logout-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-switch select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-weight: 40;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  line-height: normal;
+}
+
+.lang-switch select option {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.lang-switch i {
+  font-size: 18px;
+  color: white;
+  opacity: 80%;
+  margin-top: 4px;
+}

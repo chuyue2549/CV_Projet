@@ -1,0 +1,285 @@
+/* Cours style */
+.page-cours {
+  padding: 5px;
+  background-color: #edf0f7;
+}
+
+.page-cours .search-area {
+  position: relative;
+}
+
+.page-cours .search-block{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px 30px 50px;
+  padding: 30px 20px 10px 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: linear-gradient(135deg, #2b65e2 0%, #2b5bdfd2 30%, #74c0e3 90%, #6e8ce0 100%);
+  align-items: center;
+  justify-content: center;
+}
+
+.page-cours .search-block .text{
+  text-align: center;
+}
+
+.page-cours h1 {
+  margin: 10px 20px 20px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.page-cours .search-block .text p{
+  font-size: 20px;
+  color: #f2f4f5;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.page-cours .search-row{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.page-cours #search-input{
+  width: 500px;
+  height: 40px;
+
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 60px 0 0 60px;
+  outline: none;
+
+  display: block;
+  margin-left: 190px;
+  font-size: 15px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.page-cours #search-button {
+  padding: 10px 20px;
+  font-size: 15px;
+  height: 40px;
+
+  border: 1px solid #ccc;
+  border-radius: 0 60px 60px 0;  
+  cursor: pointer;
+  color: #2e2c2c;
+  background: #fff;
+  font-weight: 600;
+
+  /*position*/
+  margin-left: 0px;
+  display: block;
+}
+
+.page-cours #search-button:hover{
+  color: #2b5bdfd2;
+}
+
+/* Filtrer */
+.page-cours #filter-button {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #2e2c2c;
+  background: #fff;
+  display: block;
+  margin: 0 30px 0 90px;
+  height: 40px;
+}
+
+.page-cours #filter-button:hover{
+  color: #2b5bdfd2;
+}
+
+.page-cours #filter-button.is-on{
+  background-color: #2b65e2;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 750;
+}
+
+.page-cours .filter-panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  background: #fff;
+  right: 50px;
+  width: 400px;
+}
+
+.page-cours .filter-panel.is-open {
+  display: block;
+}
+
+.page-cours .filter-header {
+  display: flex;
+  align-items: center;
+}
+
+.page-cours .filter-header h2 {
+  font-size: 15px;
+  margin: 10px 0 15px 0;
+}
+
+.page-cours #close-filter-button {
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: #2b65e2;
+  font-weight: bolder;
+}
+
+.page-cours .filter-block {
+  margin-bottom: 10px;
+  padding-top: 6px;
+  border-top: 1px solid #eee;
+}
+
+.page-cours .filter-block h3 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+}
+
+.page-cours .filter-block label {
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+.page-cours .filter-footer {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  margin: 10px;
+}
+
+.page-cours #cancel-filter{
+  border: 1px solid #2b5bdfd2;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #2b5bdfd2;
+  background: #fff;
+  padding: 10px;
+}
+
+.page-cours #resulta{
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #fff;
+  background: #2b5bdfd2;
+  margin-left: 160px;
+  padding: 10px;
+}
+
+
+.cours-list{
+  margin: 15px;
+}
+
+/* card */
+.cours-card{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 0 50px 30px 50px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+/* main */
+.cours-card .main{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* nom de cours */
+.cours-card .main h3{
+  margin: 0;
+  font-size: 20px;
+  color: #1b2b41;
+}
+
+/* auteur */
+.cours-card .auteur{
+  margin: 0;
+  font-size: 15px;
+  color: #5b6b86;
+}
+
+/* niveau / matière */
+.cours-card .middle{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cours-card .middle p{
+  margin: 0;
+  font-size: 15px;
+  color: #4a5b74;
+}
+
+/* description */
+.cours-card .desc{
+  margin: 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* button */
+.cours-card .action{
+  margin-top: auto;     
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.cours-card .action button{
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-right: 50px;
+  font-weight: 35px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  background: #2b5bdfd2;
+}
+
+.cours-card .action button:hover{
+  color: #78daf5;
+}
+
+
+.cours-card .status{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
+  background: radial-gradient(circle at top left, #3430a3, #191565);
+  border-radius: 10px;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cours-card .status p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em; 
+}

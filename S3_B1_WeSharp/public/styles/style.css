@@ -1,0 +1,23 @@
+/* style.css */
+
+/* Import of a font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+/* Import of each css file */
+@import url('global.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('login.css');
+@import url('cours.css');
+@import url('cours_lecture.css');
+@import url('cours_edit.css');
+@import url('cours_edit.css');
+@import url('exercices.css');
+@import url('qcm.css');
+@import url('qcm_edit.css');
+@import url('qcm_edit.css');
+@import url('admin.css');
+@import url('accueil.css');
+@import url('activate.css');
+@import url('login.css');
+@import url('alerts.css');

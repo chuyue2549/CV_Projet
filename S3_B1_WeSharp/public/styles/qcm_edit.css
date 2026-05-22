@@ -1,0 +1,116 @@
+
+.page-modif {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #0b2252;
+}
+
+.modif-course-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 4px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.modif-course-wrapper:hover {
+    border-color: #7ed0ff;
+}
+
+.modif-course-wrapper .form-group {
+    margin-bottom: 14px;
+}
+
+.modif-course-wrapper label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.modif-course-wrapper input,
+.modif-course-wrapper textarea,
+.modif-course-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.modif-course-wrapper input:focus,
+.modif-course-wrapper textarea:focus,
+.modif-course-wrapper select:focus {
+    outline: none;
+    border-color: #2b65e2;
+    box-shadow: 0 0 4px rgba(43,101,226,0.3);
+}
+
+.modif-course-wrapper input[type="checkbox"] {
+    width: auto;
+}
+
+.page-modif h1 {
+    text-align: center;
+    color: #0b2252;
+    margin-bottom: 20px;
+}
+
+.page-modif h1::after {
+    content:"";
+    display:block;
+    margin:10px auto 0;
+    width:100px;
+    height:4px;
+    border-radius:999px;
+    background: linear-gradient(90deg,#1e3cfa,#4e9ff9,#7ed0ff);
+}
+
+.question-block {
+    border: 2px solid #eee;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.question-row {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.qcm-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-annuler,
+.btn-confirmer {
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-annuler {
+    background-color: #777;
+    color: white;
+}
+
+.btn-annuler:hover {
+    background-color: #555;
+}
+
+.btn-confirmer {
+    background-color: #056bd8;
+    color: white;
+}
+
+.btn-confirmer:hover {
+    background-color: #0056b3;
+}
